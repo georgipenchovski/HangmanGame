@@ -100,8 +100,6 @@ public class HangmanGame {
                 case 1:
                     break;
                 case 2:
-                    break;
-                case 3:
                     wordIsGuessed = true;
                     break;
             }
@@ -124,7 +122,7 @@ public class HangmanGame {
         int emptyPosition = findEmptyPosition(enteredLetters);
         System.out.print("Познайте думата: ");
         if (!printWord(word, enteredLetters))
-            return 3;
+            return 2;
         System.out.print("\nВъведете буква: ");
         Scanner input = new Scanner(System.in);
         char userInput = input.nextLine().toLowerCase().charAt(0);
